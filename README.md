@@ -52,7 +52,7 @@ The middleware is built on top of Deno's native HTTP APIs, see the benchmarks
 | Express    | 4.17.3  |    ✓    |       167k requests in 40.11s, 29 MB read |
 | Fastify    | 3.27.4  |    ✓    |     1105k requests in 40.07s ,193 MB read |
 | Oak        | 10.4.0  |    ✓    |       260k requests in 40.09s, 45 MB read |
-| **Faster** | **5.6** |  **✓**  | **1432k requests in 40.17s, 250 MB read** |
+| **Faster** | **5.7** |  **✓**  | **1432k requests in 40.17s, 250 MB read** |
 
 Note that in addition to performance, Faster is a very complete framework
 considering its middleware collection.
@@ -697,13 +697,13 @@ sudo crontab -e
 Add to the end of the file (to check and renew if necessary every 12 hours):
 
 ```
-0 */12 * * * certbot -q renew
+0 */12 * * * certbot -q renew --standalone --preferred-challenges=http
 ```
 
 Or also to check every 7 days:
 
 ```
-0 0 * * 0 certbot -q renew
+0 0 * * 0 certbot -q renew --standalone --preferred-challenges=http
 ```
 
 ## About
