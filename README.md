@@ -18,7 +18,7 @@ need is an optimized middleware manager, all other functionality is middleware.
   - [Get URL params](#get-url-params)
   - [Cookies](#cookies)
   - [Redirect](#redirect)
-- [Middleares](#middleares)
+- [Middlewares](#middlewares)
   - [Logger](#logger)
   - [Body Parsers res and req](#body-Parsers-res-and-req)
   - [Rate Limit](#rate-limit)
@@ -159,7 +159,7 @@ server.get(
 );
 ```
 
-## Middleares
+## Middlewares
 
 This project has a standard set of middleware useful for most cases.
 
